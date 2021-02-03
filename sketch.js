@@ -138,7 +138,7 @@ function draw() {
     obstaclesGroup.setLifetimeEach(-1);
     cloudsGroup.setLifetimeEach(-1);
     
-    if(touches.length>0) {      
+    if(touches.length>0 || mousePressedOver(restart) || keyDown('space')) {      
       reset();
       touches = []
     }
